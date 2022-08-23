@@ -1,13 +1,14 @@
-# Diploma Final Year Project - CSGuider Telegram Bot
-# Authors - Aksh Nishar, Kenneth Rodrigues, Khush Trivedi
-# Created - December 2021
+# Semester 3 PR Project - CSGuider Telegram Bot
+# Authors - Anshul Gada, Kajal Mandal
+# Created - August 2022
 
 # Importing necessary classes from aiogram module
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-
+from keep_alive import keep_alive
+keep_alive()
 # API KEY - got from Telegram's BotFather
-API_KEY = "2142160935:AAEGjTuZrHdNmLrGwVimS_OLs-qSfV-fd6c"
+API_KEY = "5687024777:AAGw7r-reR5I0m3lJdMmQ88gOiMedYE013g"
 
 # Bot class creates and initializes the bot
 # Dispatcher class dispatches all kinds of updates to the Bot's registered handlers.
@@ -246,9 +247,9 @@ after buying them.")
 
     elif message.text == "\U0001F4E7 Contact Us \U0001F4E7":
         await message.answer("If you have any questions, feel free to email any one of us: \n\n\
-aksh.nishar@somaiya.edu\n\n\
-kenneth.r@somaiya.edu\n\n\
-khush.t@somaiya.edu")
+anshulgada05@gmail.com\n\n\
+kajalm8080@gmail.com\n\n\
+")
 
     elif message.text == "\U00002699 AI and ML \U00002699":
         ai_and_ml_on = True
